@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title><%= pageData.title %></title>
+    <meta name="description" content="<%= pageData.description %>">
+    <meta name="keyword" content="<%= pageData.keyword %>">
+    <link rel="shortcut icon" href="<%= RELATIVE_PATH %>favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<%= RELATIVE_PATH %>favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+          href="<%= RELATIVE_PATH %>fonts/FontAwesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="<%= RELATIVE_PATH %>js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="<%= RELATIVE_PATH %>js/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="<%= RELATIVE_PATH %>js/animate-it/css/animations.css"/>
+    <link rel="stylesheet" type="text/css" href="<%= RELATIVE_PATH %>css/styles.css">
+</head>
+<body>
+<noscript>このウェブサイトを実行するにはJavaScriptを有効にする必要があります。</noscript>
+<% if(pageData.template == "index"){ %>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+        (document, 'script', 'facebook-jssdk'));
+    </script>
+<% } %>
+
+<% include common/_header.ejs %>
+<%- include(pageData.template) %>
+<% include common/_footer.ejs %>
+
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/animate-it/js/css3-animate-it.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/slick/slick.min.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/jarallax.min.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/setting.js"></script>
+</body>
+</html>

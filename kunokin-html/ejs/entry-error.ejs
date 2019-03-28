@@ -1,0 +1,184 @@
+<main class="page-<%= pageData.template %>">
+    <section class="page-heading">
+        <div class="container">
+            <h1><%= pageData.h1 %></h1>
+            <% include common/_breadcrumbs.ejs %>
+        </div>
+    </section>
+    <div class="layout contact-wrap mtpc-50 mtsp-30">
+        <div class="container">
+            <div class="info-section">
+                <p class="desc">採用に関するエントリー、お問合せはこちらからお願いします。</p>
+                <p class="sub-desc txt">
+                    ※お問い合わせに対して、担当部署より迅速に回答させていただくよう努めますが、内容によってはお答えできない場合や回答に時間がかかる場合がございます。また、当社休業日にいただいたお問い合わせにつきましては翌営業日以降の対応となります。あらかじめご了承下さい。</p>
+            </div>
+            <div class="tel-section clearfix">
+                <p class="pc txt-center"><img src="<%= RELATIVE_PATH %>images/photos/entry/tel.png" alt="tel"></p>
+                <p class="sp txt-center"><img src="<%= RELATIVE_PATH %>images/photos/entry/tel_sp.png" alt="tel"></p>
+            </div>
+            <div class="contact-form">
+                <form action="error.html" method="post">
+                    <table>
+                        <tbody>
+                        <tr class="error">
+                            <th>入力エラー</th>
+                            <td class="td-label"></td>
+                            <td>
+                                <strong>氏名</strong> をご入力ください<br>
+                                <strong>年齢</strong> をご入力ください<br>
+                                <strong>性別</strong>をご入力ください<br>
+                                <strong>お電話番号</strong> をご入力ください<br>
+                                <strong>メールアドレス</strong>をご入力ください<br>
+                                <strong>ご住所</strong> をご入力ください<br>
+                                <strong>職歴または最終学歴</strong> をご入力ください<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>氏名<span class="label label-required">必須</span></th>
+                            <td class="td-label sp-off"><span class="label label-required">必須</span></td>
+                            <td><input type="text" name="fName"  value="" class="text"></td>
+                        </tr>
+                        <tr>
+                            <th>年齢<span class="label label-required">必須</span></th>
+                            <td class="td-label sp-off"><span class="label label-required">必須</span></td>
+                            <td><label><input type="number"  value="" class="text number text-auto"
+                                              size="4"></label> 歳
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>性別<span class="label label-required">必須</span></th>
+                            <td class="td-label ap-off"><span class="label label-required">必須</span></td>
+                            <td>
+                                <ul class="line">
+                                    <li><label><input type="radio" name="fAge" value="男性" checked="checked">男性</label>
+                                    </li>
+                                    <li><label><input type="radio" name="fAge"  value="女性">女性</label>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>お電話番号<span class="label label-required">必須</span></th>
+                            <td class="td-label sp-off"><span class="label label-required">必須</span></td>
+                            <td><input type="number"  value="" class="text"></td>
+                        </tr>
+
+                        <tr>
+                            <th>メールアドレス<span class="label label-required">必須</span></th>
+                            <td class="td-label sp-off"><span class="label label-required">必須</span></td>
+                            <td><input type="email"  value="" class="text"></td>
+                        </tr>
+
+                        <tr>
+                            <th>ご住所<span class="label label-required">必須</span></th>
+                            <td class="td-label sp-off"><span class="label label-required">必須</span></td>
+                            <td>
+                                <ul>
+                                    <li>〒 <label><input type="text" name="zip" class="text text-auto" value=""
+                                                        size="12"></label>
+                                        <button class="button" tabindex="1" accesskey="a" type="button">郵便番号から検索</button>
+                                    </li>
+                                    <li>都道府県：<select tabindex="1">
+                                            <option value="" selected="selected">都道府県を選択</option>
+                                            <option value="北海道">北海道</option>
+                                            <option value="青森県">青森県</option>
+                                            <option value="岩手県">岩手県</option>
+                                            <option value="宮城県">宮城県</option>
+                                            <option value="秋田県">秋田県</option>
+                                            <option value="山形県">山形県</option>
+                                            <option value="福島県">福島県</option>
+                                            <option value="茨城県">茨城県</option>
+                                            <option value="栃木県">栃木県</option>
+                                            <option value="群馬県">群馬県</option>
+                                            <option value="埼玉県">埼玉県</option>
+                                            <option value="千葉県">千葉県</option>
+                                            <option value="東京都">東京都</option>
+                                            <option value="神奈川県">神奈川県</option>
+                                            <option value="山梨県">山梨県</option>
+                                            <option value="長野県">長野県</option>
+                                            <option value="新潟県">新潟県</option>
+                                            <option value="富山県">富山県</option>
+                                            <option value="石川県">石川県</option>
+                                            <option value="福井県">福井県</option>
+                                            <option value="岐阜県">岐阜県</option>
+                                            <option value="静岡県">静岡県</option>
+                                            <option value="愛知県">愛知県</option>
+                                            <option value="三重県">三重県</option>
+                                            <option value="滋賀県">滋賀県</option>
+                                            <option value="京都府">京都府</option>
+                                            <option value="大阪府">大阪府</option>
+                                            <option value="兵庫県">兵庫県</option>
+                                            <option value="奈良県">奈良県</option>
+                                            <option value="和歌山県">和歌山県</option>
+                                            <option value="鳥取県">鳥取県</option>
+                                            <option value="島根県">島根県</option>
+                                            <option value="岡山県">岡山県</option>
+                                            <option value="広島県">広島県</option>
+                                            <option value="山口県">山口県</option>
+                                            <option value="徳島県">徳島県</option>
+                                            <option value="香川県">香川県</option>
+                                            <option value="愛媛県">愛媛県</option>
+                                            <option value="高知県">高知県</option>
+                                            <option value="福岡県">福岡県</option>
+                                            <option value="佐賀県">佐賀県</option>
+                                            <option value="長崎県">長崎県</option>
+                                            <option value="熊本県">熊本県</option>
+                                            <option value="大分県">大分県</option>
+                                            <option value="宮崎県">宮崎県</option>
+                                            <option value="鹿児島県">鹿児島県</option>
+                                            <option value="沖縄県">沖縄県</option>
+                                        </select></li>
+                                    <li><input  type="text" class="text" value=""></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>職歴または<br class="pc">
+                                最終学歴<span class="label label-required">必須</span></th>
+                            <td class="td-label sp-off"><span class="label label-required">必須</span></td>
+                            <td><textarea class="text" tabindex="1" accesskey="a" ></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <th>その他備考<span class="label label-any">任意</span></th>
+                            <td class="td-label sp-off"><span class="label label-any">任意</span></td>
+                            <td><textarea class="text" tabindex="1" accesskey="a" ></textarea></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="privacy-box">
+                        <h2>個人情報について</h2>
+                        <p>
+                            久野金属工業株式会社（以下、「当社」といいます）は、当社に個人情報を提供されるすべての方々（以下、「お客様」といいます）の個人情報を取り扱わせていただくことの重要性を深く認識し、お客様からご提供いただいた個人情報を適切に取り扱い、保護し、尊重するよう努めてまいります。</p>
+                        <dl>
+                            <dt>個人情報とは</dt>
+                            <dd>個人情報とは、当サイトにおいて、当社がお客様から提供いただいた、氏名・住所・電話番号・E-mailアドレス等の個人に関する情報で、特定の個人を識別できるものを意味します。
+                            </dd>
+                            <dt>個人情報の取得と使用目的および利用制限</dt>
+                            <dd>当社は個人情報を適正に取得します。また、法令の定める場合を除き、お客様からのご質問・ご要望・ご応募に対する回答のためにのみ使用いたします。</dd>
+                            <dd>
+                                他の目的で個人情報を取得・利用する場合には、お客様へ事前に使用目的・利用方法をお知らせし、許可を得た場合にのみ取得・利用することとし、許可が得られなかった場合には、他の目的での取得・利用はいたしません。
+                            </dd>
+                            <dd>当社は、個人情報の取扱いに関係する日本の法令、その他の規範を尊守いたします。</dd>
+                            <dt>個人情報の開示</dt>
+                            <dd>当社は、個人情報をご提供いただいたお客様ご本人の同意を得た場合、または、法令によって開示を求められた場合を除き、お客様の個人情報を第三者へ開示・提供することはいたしません。
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <ul class="submit">
+                        <li class="sp-off"><input class="btn-images" type="image"
+                                                  src="<%= RELATIVE_PATH %>images/photos/entry/btn-confirm_off.png"
+                                                  width="280" height="60" alt="確認画面へ"></li>
+
+                    </ul>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,247 @@
+<main class="page-<%= pageData.template %>">
+    <section class="page-head">
+        <div class="container container-md">
+            <h1>取材・メディア掲載に<br class="sp">関するお問い合わせ</h1>
+        </div>
+    </section>
+    <section class="section-contact-form">
+        <div class="container container-md">
+            <p class="txt-basic txt-justify mbpc-35 mbsp-10">
+                取材・メディア掲載についてのお問い合わせの際は、下記のフォームをご利用下さい。受付完了後、内容を確認し弊社担当より折り返しメール等でご連絡いたします。以下のフォームより必要事項をご記入いただき、「<a
+                        href="<%= RELATIVE_PATH %>privacy/index.html"
+                        class="txt-highlight" target="_blank">個人情報保護方針</a>」をご確認のうえ「確認」ボタンを押してください。お問い合わせ内容によって、全てにご回答させていただけず非公表とさせていただく場合がございますのであらかじめご了承ください。
+            </p>
+            <div class="textbox mbpc-73 mbsp-25">
+                <div class="textbox-header">
+                    お問い合わせ前にご確認ください
+                </div>
+                <div class="textbox-content">
+                    <p class="txt-basic">
+                        お問い合わせ内容によっては、E-メールではなくお電話等でお返事させていただく場合もございます。 ご了承ください。<br>
+                        回答までにお時間をいただく場合がございます。ご了承ください。<br>
+                        お問い合わせの内容によっては、回答できない場合もございますので、あらかじめご了承ください。
+                    </p>
+                </div>
+            </div>
+            <form action="<%= RELATIVE_PATH %>contact/confirm.html"
+                  data-validate="<%= RELATIVE_PATH %>contact/ajax_validate/"
+                  class="form-contact contact-form warning"
+                  method="post">
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fMediaName">
+                            媒体名
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）月刊 IKOTTO
+                        <div class="error-balloon">
+                            <p><strong>媒体名</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                    <div class="form-content error">
+                        <span class="required-label">必須</span>
+                        <input type="text" required="required" id="fMediaName">
+                        <div class="error-balloon">
+                            <p><strong>媒体名</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fCompanyName">
+                            会社名・組織名
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）株式会社IKOTTO
+                        <div class="error-balloon">
+                            <p><strong>会社名・組織名</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                    <div class="form-content error">
+                        <span class="required-label">必須</span>
+                        <input type="text" required="required" id="fCompanyName">
+                        <div class="error-balloon">
+                            <p><strong>会社名・組織名</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fDepartmentName">
+                            部署名
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）IKOTTO 事業部
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fDepartmentName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fPersonInCharge">
+                            ご担当者名
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）育田太郎
+                        <div class="error-balloon">
+                            <p><strong>ご担当者名</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                    <div class="form-content error">
+                        <span class="required-label">必須</span>
+                        <input type="text" required="required" id="fPersonInCharge">
+                        <div class="error-balloon">
+                            <p><strong>ご担当者名</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fRepresentativeName">
+                            代表者名
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）多田育子
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fRepresentativeName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fEmail">
+                            メールアドレス
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）yamada@ikotto.co.jp
+                        <div class="error-balloon">
+                            <p><strong>メールアドレス</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                    <div class="form-content error">
+                        <span class="required-label">必須</span>
+                        <input type="email" required="required" id="fEmail">
+                        <div class="error-balloon">
+                            <p><strong>メールアドレス</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fPhoneNumber">
+                            お電話番号
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）00-0000-0000
+                        <div class="error-balloon">
+                            <p><strong>お電話番号</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                    <div class="form-content error">
+                        <span class="required-label">必須</span>
+                        <input type="number" required="required" id="fPhoneNumber">
+                        <div class="error-balloon">
+                            <p><strong>お電話番号</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fFaxNumber">
+                            FAX番号
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）00-0000-0000
+                    </div>
+                    <div class="form-content">
+                        <input type="number" id="fFaxNumber">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fPrefectures">
+                            都道府県
+                        </label>
+                    </div>
+                    <div class="form-notice error form-notice-lg">
+                        <div class="error-balloon">
+                            <p><strong>都道府県</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                    <div class="form-content form-content-sm error">
+                        <span class="required-label">必須</span>
+                        <div class="custom-select">
+                            <select name="" id="">
+                                <option value="">お選びください</option>
+                                <option value="">東京都</option>
+                                <option value="">大阪市</option>
+                                <option value="">名古屋</option>
+                            </select>
+                        </div>
+                        <div class="error-balloon">
+                            <p><strong>都道府県</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fStreetAddress">
+                            住所
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）刈谷市相生町３丁目３<br class="pc"><span class="pc-in">　　</span>富士ビルディング 5F
+                        <div class="error-balloon">
+                            <p><strong>住所</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                    <div class="form-content error">
+                        <span class="required-label">必須</span>
+                        <input type="text" required="required" id="fStreetAddress">
+                        <div class="error-balloon">
+                            <p><strong>住所</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fCustomMessages">
+                            お問い合わせ内容
+                        </label>
+                    </div>
+                    <div class="form-notice error">
+                        例）○月号の特集取材をしたい
+                        <div class="error-balloon">
+                            <p><strong>お問い合わせ内容</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                    <div class="form-content error">
+                        <span class="required-label">必須</span>
+                        <textarea required="required" id="fCustomMessages"></textarea>
+                        <div class="error-balloon">
+                            <p><strong>お問い合わせ内容</strong> をご入力ください</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-verification step-01 txt-center">
+                    <div class="custom-checkbox mbpc-40 mbsp-30">
+                        <input type="checkbox" id="fConfirm">
+                        <label for="fConfirm">
+                            <a href="<%= RELATIVE_PATH %>privacy/index.html" class="txt-highlight" target="_blank">個人情報保護方針</a>に同意します。
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-orange btn-rounded" disabled="disabled">確認する</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>

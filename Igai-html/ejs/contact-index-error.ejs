@@ -1,0 +1,93 @@
+<main class="contents page-<%= pageData.template %>">
+    <% include common/_breadcrumbs.ejs %>
+    <section class="page-heading page-heading-contact page-heading-<%= pageData.template %>">
+        <h1 class="title"><%= pageData.h1 %></h1>
+        <p class="txt">Contact</p>
+    </section>
+    <section class="section-contact-from">
+        <div class="container">
+
+            <div class=" mbpc-30 contact-from-head ">
+                <h2 class="title txt-center mbpc-30">
+                    入力エラー
+                </h2>
+                <p class="txt-basic lh2 lh2 ">
+                    お名前 をご入力ください <br>
+                    電話番号 をご入力ください <br>
+                    メールアドレス をご入力ください。 <br>
+                    お問い合わせ内容 をご入力ください。
+                </p>
+            </div>
+            <form action="" class="contact-from">
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fName">お名前</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fName" tabindex="1" accesskey="a" required="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fTitle">役職名</label>
+                        <span class="label-option">任意</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fTitle" tabindex="1" accesskey="a" required="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fCompanyName">会社名</label>
+                        <span class="label-option">任意</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fCompanyName" tabindex="1" accesskey="a" required="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fPhone">電話番号</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="number" id="fPhone" tabindex="1" accesskey="a" required="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fMail">メールアドレス</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="email" id="fMail" tabindex="1" accesskey="a" required="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fUrl">ホームページURL</label>
+                        <span class="label-option">任意</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fUrl" tabindex="1" accesskey="a" required="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label top">
+                        <label for="fComment">お問い合わせ内容</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <textarea id="fComment" tabindex="1" accesskey="a"></textarea>
+                    </div>
+                </div>
+                <div class="txt-center mtpc-50 ">
+                    <button type="submit" class="btn btn-center btn-mail" tabindex="1" accesskey="a">この内容で送信する<img alt="img" src="<%= RELATIVE_PATH %>images/photos/contact/mail.png"/></button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <% include common/_footer.ejs %>
+</main>

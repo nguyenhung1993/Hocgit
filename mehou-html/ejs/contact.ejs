@@ -1,0 +1,106 @@
+<main class="main-content page-<%= pageData.template %>">
+    <section class="page-head-banner txt-center page-<%= pageData.template %>">
+        <div class="container container-md">
+            <h2>お問い合わせ</h2>
+            <p>CONTACT</p>
+            <img src="<%= RELATIVE_PATH %>images/icons/section-contact-ttl-pattern@2x.png" alt="">
+        </div>
+    </section>
+    <section class="section-contact-form">
+        <form action="" method="post">
+            <div class="contact-form-heading">
+                <div class="container container-xs">
+                    <div class="section-ttl">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:0524713288">052-471-3288</a>
+                        <p>受付：平日 9:00〜17:00</p>
+                    </div>
+                    <p class="message">
+                        ご応募や、当社へのお問い合わせは、下記のフォームより受け付けています。<br>
+                        必要事項を入力の上、送信してください。<br>
+                        未経験でも、当社の業務内容やビジョンに共感いただける方からのご応募なら大歓迎。<br>
+                        応募に関する疑問や不安のある方、まずは問い合わせだけ、という方もお気軽にご連絡ください！
+                    </p>
+                </div>
+            </div>
+            <div class="contact-form-body">
+                <div class="container container-sm">
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fContentOfInquiry">お問い合わせ内容</label>
+                            <span class="tag required-tag">必  須</span>
+                        </div>
+                        <div class="form-content">
+                            <div class="custom-select">
+                                <select name="fContentOfInquiry" id="fContentOfInquiry">
+                                    <option value="">選択してください</option>
+                                    <option value="応募する">応募する</option>
+                                    <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fOccupation">希望職種</label>
+                            <span class="tag no-required-tag">任  意</span>
+                        </div>
+                        <div class="form-content">
+                            <input type="text" id="fOccupation" name="fOccupation" placeholder="例：電気工事士"
+                                   class="input-lg">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fFirstName">お名前</label>
+                            <span class="tag required-tag">必  須</span>
+                        </div>
+                        <div class="form-content">
+                            <input type="text" id="fFirstName" name="fFirstName" placeholder="例：名宝太郎"
+                                   class="input-md">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fPhoneNumber">お電話番号（携帯可）</label>
+                            <span class="tag required-tag">必  須</span>
+                        </div>
+                        <div class="form-content">
+                            <input type="number" id="fPhoneNumber" name="fPhoneNumber" placeholder="例：09012345678"
+                                   class="input-md">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fEmail">メールアドレス</label>
+                            <span class="tag required-tag">必  須</span>
+                        </div>
+                        <div class="form-content">
+                            <input type="email" id="fEmail" name="fEmail" placeholder="例：example@meihou.nagoya"
+                                   class="input-lg">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fComment">当社へのメッセージ</label>
+                            <span class="tag no-required-tag">任  意</span>
+                            <span class="notice">※自由にご記入ください！</span>
+                        </div>
+                        <div class="form-content">
+                            <textarea name="fComment" id="fComment" placeholder="自由にご記入ください"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-footer">
+                <div class="container container-sm txt-center">
+                    <button type="submit" class="btn btn-solid-orange">
+                        <i class="fa fa-paper-plane fa-hidden" aria-hidden="true"></i>
+                        <span>入力内容の確認</span>
+                        <span class="arrow-right"></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>

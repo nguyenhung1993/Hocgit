@@ -1,0 +1,27 @@
+<?php echo($fFirstName); ?> 様
+
+お問い合わせいただきありがとうございます。
+以下の内容で受け付けました。
+
+後ほど、担当者より折り返しご連絡いたします。
+
+
+-----
+■お問い合わせ内容：<?php echo($fContentOfInquiry); ?> 
+■希望職種：<?php echo($fOccupation); ?> 
+ 
+■お名前：<?php echo($fFirstName); ?> 
+■お電話番号（携帯可）：<?php echo($fPhoneNumber); ?> 
+■メールアドレス：<?php echo($fEmail); ?> 
+ 
+■当社へのメッセージ： 
+<?php echo($fComment); ?> 
+-----
+
+==============================
+　名宝電気工事株式会社
+　E-mail: contact@meihou.nagoya
+　WEB: https://www.meihou.nagoya/
+　TEL: 052-471-3288
+　受付／平日9:00〜17:00
+==============================

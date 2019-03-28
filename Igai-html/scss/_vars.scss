@@ -1,0 +1,221 @@
+/* ====================================================
+Font
+==================================================== */
+@font-face {
+    font-family: "STHeiti", sans-serif;
+    font-weight: 400;
+    src: url("../fonts/STHeiti.ttf");
+}
+
+@font-face {
+    font-family: "Noto Sans CJK JP";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/NotoSans/NotoSansCJKjp-Thin.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/NotoSans/NotoSansCJKjp-Thin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/NotoSans/NotoSansCJKjp-Thin.woff2") format("woff2"), /* Modern Browsers */
+    url('../fonts/NotoSans/NotoSansCJKjp-Thin.woff') format('woff'), /* Modern Browsers */
+    url("../fonts/NotoSans/NotoSansCJKjp-Thin.otf") format("opentype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "Noto Sans CJK JP";
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/NotoSans/NotoSansCJKjp-Light.eot");
+    src: local('Noto Sans CJK JP Light'),
+    url("../fonts/NotoSans/NotoSansCJKjp-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Light.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Light.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noto Sans CJK JP";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/NotoSans/NotoSansCJKjp-DemiLight.eot");
+    src: local('Noto Sans CJK JP DemiLight'),
+    url("../fonts/NotoSans/NotoSansCJKjp-DemiLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans/NotoSansCJKjp-DemiLight.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansCJKjp-DemiLight.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansCJKjp-DemiLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noto Sans CJK JP";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/NotoSans/NotoSansCJKjp-Regular.eot");
+    src: local('Noto Sans CJK JP Regular'),
+    url("../fonts/NotoSans/NotoSansCJKjp-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Regular.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noto Sans CJK JP";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/NotoSans/NotoSansCJKjp-Medium.eot");
+    src: local('Noto Sans CJK JP Medium'),
+    url("../fonts/NotoSans/NotoSansCJKjp-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Medium.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Medium.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noto Sans CJK JP";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/NotoSans/NotoSansCJKjp-Bold.eot");
+    src: local('Noto Sans CJK JP Bold'),
+    url("../fonts/NotoSans/NotoSansCJKjp-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Bold.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Bold.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noto Sans CJK JP";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/NotoSans/NotoSansCJKjp-Black.eot");
+    src: local('Noto Sans CJK JP Black'),
+    url("../fonts/NotoSans/NotoSansCJKjp-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Black.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Black.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansCJKjp-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noto Sans Mono CJK JP";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/NotoSans/NotoSansMonoCJKjp-Regular.eot");
+    src: url("../fonts/NotoSans/NotoSansMonoCJKjp-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans/NotoSansMonoCJKjp-Regular.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansMonoCJKjp-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noto Sans Mono CJK JP";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/NotoSans/NotoSansMonoCJKjp-Bold.eot");
+    src: url("../fonts/NotoSans/NotoSansMonoCJKjp-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans/NotoSansMonoCJKjp-Bold.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansMonoCJKjp-Bold.otf") format("opentype");
+}
+
+$font-gothic: 'Noto Sans CJK JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', '游ゴシック', '游ゴシック体', YuGothicMedium, YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ ゴシック', 'MS Gothic', 'HiraKakuProN-W3', 'TakaoExゴシック', TakaoExGothic, 'MotoyaLCedar', 'Droid Sans Japanese', sans-serif;
+$font-mincho: 'Noto Serif CJK JP', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', '游明朝', '游明朝体', YuMincho, 'Yu Mincho', 'ＭＳ 明朝', 'MS Mincho', 'HiraMinProN-W3', 'TakaoEx明朝', TakaoExMincho, 'MotoyaLCedar', 'Droid Sans Japanese', serif;
+
+@mixin font-rem-px($sizeValue) {
+    font-size: ($sizeValue) + px;
+    font-size: ($sizeValue / 10) + rem;
+}
+
+@mixin font-rem-vw($element-size, $screen-size) {
+    font-size: ($element-size / $screen-size) + vw;
+}
+@function calc-vw($element-size, $screen-size) {
+    $vwSize: ($element-size / $screen-size) * 100;
+    @return #{$vwSize}vw;
+}
+/* ====================================================
+Position & transform
+==================================================== */
+@mixin v-align {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin h-align {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@mixin v-h-align {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* ====================================================
+Color
+==================================================== */
+$color-active : #1B519F;
+/* ====================================================
+Sizing
+==================================================== */
+@for $i from 1 through 100 {
+        .mtpc-#{$i} {
+            margin-top: $i + px !important;
+        }
+        .mlpc-#{$i} {
+            margin-left: $i + px !important;
+        }
+        .mrpc-#{$i} {
+            margin-right: $i + px !important;
+        }
+        .mbpc-#{$i} {
+            margin-bottom: $i + px !important;
+        }
+        .ptpc-#{$i} {
+            padding-top: $i + px !important;
+        }
+        .plpc-#{$i} {
+            padding-left: $i + px !important;
+        }
+        .prpc-#{$i} {
+            padding-right: $i + px !important;
+        }
+        .pbpc-#{$i} {
+            padding-bottom: $i + px !important;
+        }
+
+}
+
+@function calc-vw($element-size, $screen-size) {
+    $vwSize: ($element-size / $screen-size) * 100;
+    @return #{$vwSize}vw;
+}
+
+/* ====================================================
+Misc
+==================================================== */
+@mixin no-select {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@mixin smooth-transition {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}

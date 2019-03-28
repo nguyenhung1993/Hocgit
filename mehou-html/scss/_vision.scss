@@ -1,0 +1,106 @@
+.vision-top-message {
+    padding-top: 50px;
+    background: url("../images/photos/gray-stripped-pattern.png") #fff no-repeat center top 200px;
+    background-size: 100% auto;
+    @media screen and (max-width: 768px) {
+        padding-top: calc-vw(30, 375);
+        background: url("../images/photos/gray-stripped-pattern-sp@2x.png") #fff no-repeat center top calc-vw(345, 375);
+        background-size: 100% auto;
+        .container {
+            padding: 0;
+        }
+    }
+
+    article {
+        display: block;
+        max-width: 770px;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width: 768px) {
+            max-width: none;
+            padding: 0 calc-vw(20, 375);
+        }
+
+        p {
+            margin-bottom: 30px;
+            @extend .txt-basic;
+            @media screen and (max-width: 768px) {
+                margin-bottom: calc-vw(30, 375);
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        h3 {
+            text-align: center;
+            color: #333333;
+            font-weight: bold;
+            margin-bottom: 50px;
+            @include font-rem-px(40);
+            @media screen and (max-width: 768px) {
+                margin-bottom: calc-vw(30, 375);
+                font-size: calc-vw(24, 375);
+            }
+        }
+
+        h4 {
+            color: #000000;
+            margin-top: 10px;
+            @include font-rem-px(32);
+            @media screen and (max-width: 768px) {
+                margin-top: calc-vw(5, 375);
+                font-size: calc-vw(30, 375);
+            }
+        }
+    }
+}
+
+.personel-image {
+    padding: 100px 0;
+    background: url("../images/photos/yellow-trapezoid-pattern-left.png") #fff no-repeat left bottom;
+    @media screen and (max-width: 768px) {
+        background: url("../images/photos/yellow-trapezoid-pattern-left.png") #fff no-repeat left bottom;
+        background-size: calc-vw(300, 375) calc-vw(200, 375);
+        padding: calc-vw(80, 375) 0;
+        .container {
+            padding: 0;
+        }
+    }
+
+    figure {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        img {
+            width: 51.28%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        figcaption {
+            width: 42.73%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                padding: 0 calc-vw(20, 375);
+                margin-top: calc-vw(30, 375);
+            }
+
+            p {
+                margin-bottom: 30px;
+                @extend .txt-basic;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: calc-vw(30, 375);
+                    font-size: calc-vw(14, 375);
+                }
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

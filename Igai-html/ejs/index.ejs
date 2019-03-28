@@ -1,0 +1,42 @@
+<main class="contents page-<%= pageData.template %>">
+    <section class="banner-top__home mbpc-30">
+        <h1 class="banner-top__main">
+            <img alt="img" src="<%= RELATIVE_PATH %>images/photos/txt-01@2x.png"/>
+        </h1>
+    </section>
+    <section class="message-home">
+        <div class="container">
+            <div class="row mbpc-30">
+                <a href="<%= RELATIVE_PATH %>company/" class="col-6 item">
+                    <figure>
+                        <img alt="img" src="<%= RELATIVE_PATH %>images/photos/img-01.jpg"/>
+                        <figcaption>
+                            <div class="content txt-center">
+                                <h2 class="title mbpc-10">企業情報</h2>
+                                <p class="txt-basic">Company</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="<%= RELATIVE_PATH %>business/" class="col-6 item">
+                    <figure>
+                        <img alt="img" src="<%= RELATIVE_PATH %>images/photos/img-02.jpg"/>
+                        <figcaption>
+                            <div class="content txt-center">
+                                <h2 class="title mbpc-10">事業内容</h2>
+                                <p class="txt-basic">Business</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </a>
+            </div>
+            <div class="">
+                <p class="avd comming ">
+                    <img alt="img" src="<%= RELATIVE_PATH %>images/photos/img-03.png"/>
+                </p>
+            </div>
+        </div>
+    </section>
+    <% include common/_footer.ejs %>
+</main>

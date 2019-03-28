@@ -1,0 +1,124 @@
+<main class="contents page-<%= pageData.template %>">
+    <% include common/_breadcrumbs.ejs %>
+    <section class="page-heading page-heading-<%= pageData.template %>">
+        <h1 class="title"><%= pageData.h1 %></h1>
+        <p class="txt">Company</p>
+    </section>
+    <section class="company-outline">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="title">会社概要</h2>
+                <p class="txt">Outline</p>
+            </div>
+            <div class="row">
+                <dl class="col-6 item">
+                    <dt>名称</dt>
+                    <dd>株式会社伊賀井商店</dd>
+                    <dt>資本金</dt>
+                    <dd>21,860,000円</dd>
+                    <dt>設立年月</dt>
+                    <dd>昭和27年6月</dd>
+                    <dt>事業内容</dt>
+                    <dd class="lh2 padding-0">
+                        ■ブリキ板卸売 <br>
+                        ■ブリキ切断加工<br>
+                        ・コイル状になったブリキ板の<br>
+                        　シャーリング加工<br>
+                        ・座金のプレス加工<br>
+                        ■土木工事資材販売
+                    </dd>
+                </dl>
+                <dl class="col-6 item">
+                    <dt>所在地</dt>
+                    <dd>愛知県東海市南柴田町ハの割138番13号</dd>
+                    <dt>代表者</dt>
+                    <dd>代表取締役社長　茶屋正則</dd>
+                    <dt>従業員数</dt>
+                    <dd>8名</dd>
+                    <dt>取引銀行</dt>
+                    <dd>愛知銀行・三重銀行・三菱UFJ銀行</dd>
+                    <dt>関連企業</dt>
+                    <dd>
+                        <a class="mbpc-25" href="http://www.ishida-taihei.co.jp/" target="_blank"><img alt="img" src="<%= RELATIVE_PATH %>images/photos/company/outline-01.png"/></a>
+                        <a href="http://www.iseya-k.co.jp/" target="_blank"><img alt="img" src="<%= RELATIVE_PATH %>images/photos/company/outline-02.png"/></a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+    <section class="company-map">
+        <div class="container">
+            <div class="row mbpc-50">
+                <div class="col-6">
+                    <img class="w100" alt="img" src="<%= RELATIVE_PATH %>images/photos/company/img-01.jpg"/>
+                </div>
+                <div class="col-6">
+                    <h3 class="title mbpc-20">
+                        本社工場
+                    </h3>
+                    <ul class="list-gg">
+                        <li>〒476-0001 <span>愛知県東海市南柴田町ハの割138番13号</span></li>
+                        <li>TEL 052-603-5591<span>FAX 052-603-5595</span></li>
+                    </ul>
+                    <a href="https://goo.gl/maps/5XmvthukLKo" target="_blank" class="btn btn-gogle">Googleマップで見る <img alt="img" src="<%= RELATIVE_PATH %>images/photos/company/icon-gg.png"/></a>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-6">
+                    <img class="w100" alt="img" src="<%= RELATIVE_PATH %>images/photos/company/img-02.jpg"/>
+                </div>
+                <div class="col-6">
+                    <h3 class="title mbpc-20">
+                        レベラー工場
+                    </h3>
+                    <ul class="list-gg">
+                        <li>〒476-0001 <span>愛知県東海市南柴田町イの割44番16号</span></li>
+                        <li>TEL 052-601-01771<span>FAX 052-601-0193</span></li>
+                    </ul>
+                    <a href="https://goo.gl/maps/MJek5MhHw6M2" target="_blank" class="btn btn-gogle">Googleマップで見る <img alt="img" src="<%= RELATIVE_PATH %>images/photos/company/icon-gg.png"/></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="company-history">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="title">沿　革</h2>
+                <p class="txt">History</p>
+            </div>
+            <div class="row">
+                <dl class="col-8 item">
+                    <dt>昭和21年</dt>
+                    <dd>大岩啓がブリキ卸販売、切断加工を目的に<br>個人創業。</dd>
+                    <dt>昭和25年7月</dt>
+                    <dd>有限会社伊賀井商会へ法人化。</dd>
+                    <dt>昭和27年6月</dt>
+                    <dd>株式会社伊賀井商店へ株式会社化。</dd>
+                    <dt>昭和45年4月</dt>
+                    <dd>本社を名古屋市から現在地の東海市へ移転。</dd>
+                    <dt>平成元年5月</dt>
+                    <dd>大岩憲正が代表取締役社長に就任。</dd>
+                    <dt>平成11年6月</dt>
+                    <dd>伊賀井金属印刷株式会社を吸収合併。</dd>
+                    <dt>平成27年5月</dt>
+                    <dd>金属印刷部門を資産譲渡。</dd>
+                    <dt>平成29年9月</dt>
+                    <dd>石田鉄工株式会社と資本統合。</dd>
+                    <dt>平成29年12月</dt>
+                    <dd>茶屋正則が代表取締役社長に就任。</dd>
+                </dl>
+                <dl class="col-4">
+                    <dt class="mbpc-5"> <img class="w100" alt="img" src="<%= RELATIVE_PATH %>images/photos/company/img-03.jpg"/></dt>
+                    <dd class="txt-basic mbpc-20">昭和47年ごろの外観</dd>
+                    <dt class="mbpc-5"> <img class="w100" alt="img" src="<%= RELATIVE_PATH %>images/photos/company/img-04.jpg"/></dt>
+                    <dd class="txt-basic mbpc-20">金属印刷工場内</dd>
+                    <dt class="mbpc-5"> <img class="w100" alt="img" src="<%= RELATIVE_PATH %>images/photos/company/img-05.jpg"/></dt>
+                    <dd class="txt-basic mbpc-20">輪転印刷機</dd>
+                    <dt class="mbpc-5"> <img class="w100" alt="img" src="<%= RELATIVE_PATH %>images/photos/company/img-06.jpg"/></dt>
+                    <dd class="txt-basic mbpc-20">スポットコーター</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+    <% include common/_footer.ejs %>
+</main>

@@ -1,0 +1,55 @@
+<main class="page-<%= pageData.template %>">
+    <section class="page-heading">
+        <div class="container">
+            <h1><%= pageData.h1 %></h1>
+            <% include common/_breadcrumbs.ejs %>
+        </div>
+    </section>
+    <section class="company-info-detail">
+        <div class="container container-sm">
+            <div class="heading">
+                <time class="date-time">2018.09.25</time>
+                <span class="tag blue">中途採用</span>
+            </div>
+            <h2 class="info-title">中途採用についての会社説明会</h2>
+            <table>
+                <colgroup>
+                    <col width="200">
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th>日　程</th>
+                    <td>2018年10月1日</td>
+                </tr>
+                <tr>
+                    <th>開催時間</th>
+                    <td>10:00&#xFF5E;16:00</td>
+                </tr>
+                <tr>
+                    <th>開催場所</th>
+                    <td>本社</td>
+                </tr>
+                <tr>
+                    <th>住　所</th>
+                    <td>愛知県常滑市久米字池田174番地</td>
+                </tr>
+                <tr>
+                    <th>お問い合わせ</th>
+                    <td>TEL <a href="tel:0569438801">0569-43-8801</a></td>
+                </tr>
+                <tr>
+                    <th>備　考</th>
+                    <td>筆記用具をご用意ください。</td>
+                </tr>
+                </tbody>
+            </table>
+            <figure class="txt-center mtpc-40 mtsp-20">
+                <img src="<%= RELATIVE_PATH %>images/photos/company-info-detail.png" alt="">
+            </figure>
+            <div class="txt-center mtpc-60 mbpc-90 mtsp-30 mbsp-45">
+                <a href="" class="btn btn-outline btn-rounded btn-arrow-right">会社説明会のご応募はこちら</a>
+            </div>
+        </div>
+    </section>
+</main>

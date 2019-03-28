@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=1200,user-scalable=no">
+    <title><%= pageData.title %></title>
+    <meta name="description" content="<%= pageData.description %>">
+    <meta name="keyword" content="<%= pageData.keyword %>">
+    <link rel="shortcut icon" href="<%= RELATIVE_PATH %>favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<%= RELATIVE_PATH %>favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+          href="<%= RELATIVE_PATH %>fonts/FontAwesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="<%= RELATIVE_PATH %>css/styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115881443-7"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-115881443-7');
+    </script>
+</head>
+<body>
+<noscript>このウェブサイトを実行するにはJavaScriptを有効にする必要があります。</noscript>
+<% include common/_header.ejs %>
+<%- include(pageData.template) %>
+
+
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/setting.js"></script>
+
+</body>
+</html>

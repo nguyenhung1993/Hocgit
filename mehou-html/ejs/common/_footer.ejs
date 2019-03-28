@@ -1,0 +1,56 @@
+<% if (pageData.template == "about"
+        || pageData.template == "business"
+        || pageData.template == "index"
+        || pageData.template == "interview"
+        || pageData.template == "privacy"
+        || pageData.template == "recruit-01"
+        || pageData.template == "recruit-02"
+        || pageData.template == "vision"
+){ %>
+    <section class="contact-block">
+        <div class="container container-md">
+            <div class="section-ttl">
+                <h2>お問い合わせ</h2>
+                <p>CONTACT</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-phone">
+                    <a href="tel:0524713288">052-471-3288</a>
+                    <p>受付：平日 9:00〜17:00</p>
+                </div>
+                <div class="contact-email">
+                    <a href="<%= RELATIVE_PATH %>contact/" class="btn btn-solid-yellow">
+                        <i class="fa fa-envelope-o icon-left" aria-hidden="true"></i>
+                        <span>メールでのお問い合わせ</span>
+                        <span class="arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<% } %>
+<footer id="main-footer">
+    <div class="container container-md">
+        <div class="logo">
+            <figure>
+                <a href="<%= RELATIVE_PATH %>">
+                    <img src="<%= RELATIVE_PATH %>images/icons/footer-logo@2x.png" alt="meihou">
+                </a>
+                <figcaption>
+                    〒453-0811　愛知県名古屋市中村区太閤通６丁目４３
+                </figcaption>
+            </figure>
+        </div>
+        <ul class="sitemap">
+            <li><a href="<%= RELATIVE_PATH %>about/">会社案内</a></li>
+            <li><a href="<%= RELATIVE_PATH %>vision/">ビジョン</a></li>
+            <li><a href="<%= RELATIVE_PATH %>business/">事業領域</a></li>
+            <li><a href="<%= RELATIVE_PATH %>interview/">社員インタビュー</a></li>
+            <li><a href="<%= RELATIVE_PATH %>recruit-01/">採用情報</a></li>
+            <li><a href="<%= RELATIVE_PATH %>contact/">お問い合わせ</a></li>
+            <li><a href="<%= RELATIVE_PATH %>privacy/">プライバシーポリシー</a></li>
+        </ul>
+        <p class="copyright">&copy;︎2019 meihou.nagoya</p>
+    </div>
+</footer>
+<a href="#" class="back-to-top smooth-anchor"></a>

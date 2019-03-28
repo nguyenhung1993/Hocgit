@@ -1,0 +1,106 @@
+<main class="page-<%= pageData.template %>">
+    <section class="page-heading">
+        <div class="container">
+            <h1><%= pageData.h1 %></h1>
+            <% include common/_breadcrumbs.ejs %>
+        </div>
+    </section>
+    <section class="company-entry-form">
+        <div class="container container-sm">
+            <form action="">
+                <h2 class="form-heading mbpc-70">以下の内容をご記入の上、「確認画面へ」ボタンを押してください。</h2>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fName">氏名</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fName" tabindex="1" accesskey="a" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fMail">メールアドレス</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="email" id="fMail" tabindex="1" accesskey="a" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fMonth">参加月</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <div class="custom-select">
+                            <select id="fMonth" tabindex="1" accesskey="a" required>
+                                <option value="" selected>選択してください。</option>
+                                <option value="1">1月</option>
+                                <option value="2">2月</option>
+                                <option value="3">3月</option>
+                                <option value="4">4月</option>
+                                <option value="5">5月</option>
+                                <option value="6">6月</option>
+                                <option value="7">7月</option>
+                                <option value="8">8月</option>
+                                <option value="9">9月</option>
+                                <option value="10">10月</option>
+                                <option value="11">11月</option>
+                                <option value="12">12月</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fPerson">参加人数</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <div class="custom-select">
+                            <select id="fPerson" tabindex="1" accesskey="a" required>
+                                <option value="" selected>選択してください。</option>
+                                <option value="1">1人</option>
+                                <option value="2">2人</option>
+                                <option value="3">3人</option>
+                                <option value="4">4人</option>
+                                <option value="5">5人</option>
+                                <option value="6">6人</option>
+                                <option value="7">7人</option>
+                                <option value="8">8人</option>
+                                <option value="9">9人</option>
+                                <option value="10">10人</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fComment">備考</label>
+                    </div>
+                    <div class="form-content">
+                        <textarea id="fComment" tabindex="1" accesskey="a"></textarea>
+                    </div>
+                </div>
+                <div class="notice-box mtpc-55 mbpc-50 mtsp-25 mbsp-25">
+                    <h3>個人情報について</h3>
+                    <p>久野金属工業株式会社（以下、「当社」といいます）は、当社に個人情報を提供されるすべての方々（以下、「お客様」といいます）の個人情報を取り扱わせていただくことの重要性を深く認識し、お客様からご提供いただいた個人情報を適切に取り扱い、保護し、尊重するよう努めてまいります。</p>
+                    <h4>個人情報とは</h4>
+                    <p class="plpc-25 plsp-15">個人情報とは、当サイトにおいて、当社がお客様から提供いただいた、氏名・住所・電話番号・E-mailアドレス等の個人に関する情報で、特定の個人を識別できるものを意味します。</p>
+                    <h4>個人情報の取得と使用目的および利用制限</h4>
+                    <p class="plpc-25 plsp-15">
+                        当社は個人情報を適正に取得します。また、法令の定める場合を除き、お客様からのご質問・ご要望・ご応募に対する回答のためにのみ使用いたします。<br><br>
+                        他の目的で個人情報を取得・利用する場合には、お客様へ事前に使用目的・利用方法をお知らせし、許可を得た場合にのみ取得・利用することとし、許可が得られなかった場合には、他の目的での取得・利用はいたしません。<br><br>
+                        当社は、個人情報の取扱いに関係する日本の法令、その他の規範を尊守いたします。
+                    </p>
+                    <h4>個人情報の開示</h4>
+                    <p class="plpc-25 plsp-15">当社は、個人情報をご提供いただいたお客様ご本人の同意を得た場合、または、法令によって開示を求められた場合を除き、お客様の個人情報を第三者へ開示・提供することはいたしません。</p>
+                </div>
+                <div class="txt-center mtpc-60 mbpc-90 mtsp-30 mbsp-45">
+                    <button type="submit" class="btn btn-outline btn-rounded btn-arrow-right" tabindex="1" accesskey="a">確認画面へ</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>

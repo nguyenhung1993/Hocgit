@@ -1,0 +1,32 @@
+<main class="main-content page-<%= pageData.template %>">
+    <section class="page-head-banner txt-center page-<%= pageData.template %>">
+        <div class="container container-md">
+            <h2>お問い合わせ</h2>
+            <p>CONTACT</p>
+            <img src="<%= RELATIVE_PATH %>images/icons/section-contact-ttl-pattern@2x.png" alt="">
+        </div>
+    </section>
+    <section class="section-contact-form">
+        <form action="" method="post">
+            <div class="contact-form-heading page-<%= pageData.template %>">
+                <div class="container container-xs">
+                    <p class="notice">お問い合わせを受け付けました</p>
+                    <p class="message">
+                        お問い合わせいただきありがとうございます。<br>
+                        ご記入いただいた内容は無事送信されました。<br>
+                        自動返信メールを送信しておりますので、ご確認くださいませ。
+                    </p>
+                </div>
+            </div>
+            <div class="contact-form-footer page-<%= pageData.template %>">
+                <div class="container container-sm txt-center">
+                    <a href="<%= RELATIVE_PATH %>index.html" class="btn btn-solid-yellow scroll-left">
+                        <span class="arrow-left"></span>
+                        <span>トップページへ戻る</span>
+                        <i class="fa fa-paper-plane fa-hidden" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>

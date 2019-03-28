@@ -1,0 +1,32 @@
+.privacy-article {
+    padding: 72px 0 109px;
+    @media screen and (max-width: 768px) {
+        padding: 20px 0 0;
+    }
+    h2 {
+        color: #F08437;
+        margin-bottom: 20px;
+        @include font-rem-px(24);
+        @media screen and (max-width: 768px) {
+            @include font-rem-px(18);
+        }
+    }
+    h3 {
+        color: #434445;
+        font-weight: 500;
+        margin-bottom: 5px;
+        @include font-rem-px(20);
+        @media screen and (max-width: 768px) {
+            @include font-rem-px(16);
+        }
+    }
+    p {
+        margin-bottom: 35px;
+        line-height: 1.8;
+        color: #434445;
+        @include font-rem-px(16);
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.about-business {
+    padding: 50px 0 100px;
+    background: url("../images/photos/gray-stripped-pattern.png") #fff repeat-y center top 200px;
+    background-size: 100% auto;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        padding: calc-vw(30, 375) 0 calc-vw(80, 375);
+        background: url("../images/photos/gray-stripped-pattern-sp@2x.png") #fff repeat-y center top calc-vw(140, 375);
+        background-size: 100% auto;
+    }
+
+    &:before {
+        display: block;
+        content: '';
+        width: 390px;
+        height: 200px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media screen and (max-width: 768px) {
+            width: calc-vw(140, 375);
+            height: calc-vw(140, 375);
+        }
+    }
+
+    .container {
+        position: relative;
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    .about-business-list {
+        counter-reset: my-sec-counter;
+        @media screen and (max-width: 768px) {
+            padding: 0 calc-vw(20, 375);
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+            margin-bottom: 100px;
+            border-bottom: 1px solid #DEDEDE;
+            @media screen and (max-width: 768px) {
+                padding-bottom: calc-vw(40, 375);
+                margin-bottom: calc-vw(50, 375);
+            }
+
+            &:nth-of-type(even) {
+                .desc {
+                    @media screen and (min-width: 769px) {
+                        order: -1;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+
+            .img {
+                width: 51.28%;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .desc {
+                width: 42.73%;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+                .title {
+                    padding: 80px 0 70px 30px;
+                    position: relative;
+                    color: #333333;
+                    @include font-rem-px(26);
+                    font-weight: 500;
+                    z-index: 1;
+                    @media screen and (max-width: 768px) {
+                        padding-top: calc-vw(90, 375);
+                        padding-bottom: calc-vw(35, 375);
+                        font-size: calc-vw(26, 375);
+                    }
+
+                    &:before {
+                        display: block;
+                        counter-increment: my-sec-counter;
+                        content: "0" counter(my-sec-counter);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        color: #333333;
+                        line-height: 1;
+                        @include font-rem-px(85);
+                        font-family: "DIN Condensed Bold", sans-serif;
+                        @media screen and (max-width: 768px) {
+                            top: calc-vw(15, 375);
+                            font-size: calc-vw(85, 375);
+                        }
+                    }
+
+                    &:after {
+                        display: block;
+                        content: '';
+                        width: 73px;
+                        height: 115px;
+                        background-color: #FFF100;
+                        position: absolute;
+                        top: 20px;
+                        left: 17px;
+                        z-index: -1;
+                        @media screen and (max-width: 768px) {
+                            width: calc-vw(73, 375);
+                            height: calc-vw(115, 375);
+                            left: calc-vw(17, 375);
+                            top: calc-vw(40, 375);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,348 @@
+.action-box {
+    position: absolute;
+    @include v-h-align;
+    z-index: 1;
+
+    .page-logo {
+        width: 289px;
+        height: 321px;
+        position: relative;
+        transform: scale(.75);
+        @media screen and (max-width: 768px) {
+            transform: scale(.6);
+        }
+
+        .hotpot {
+            display: block;
+            position: relative;
+            width: 289px;
+            height: 160px;
+
+            .hotpot-cover {
+                position: absolute;
+                width: 195px;
+                height: 60px;
+                top: 0;
+                left: 32px;
+                animation: hotpot-cover 3s infinite;
+            }
+
+            .hotpot-steam {
+                position: absolute;
+                width: 67px;
+                height: 58px;
+                top: 10px;
+                right: 0;
+                animation: hotpot-steam 3s infinite;
+            }
+
+            .hotpot-body {
+                position: absolute;
+                width: 272px;
+                height: 96px;
+                bottom: 0;
+                left: 0;
+                animation: hotpot-body 3s infinite;
+            }
+        }
+    }
+
+    .scroll-page {
+        margin-top: 15px;
+        @media screen and (max-width: 768px) {
+            margin-top: -40px;
+        }
+
+        a {
+            display: block;
+            width: 60px;
+            height: 40px;
+            margin: 0 0 0 -30px;
+            position: relative;
+            left: 50%;
+            top: 0;
+            animation: arrow .8s 1s infinite ease-out alternate;
+            @media screen and (max-width: 768px) {
+                left: 53%;
+            }
+
+            &:before, &:after {
+                display: block;
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 50px;
+                background-color: #FFFFFF;
+                top: 32px;
+                left: 10px;
+                transform-origin: 5px 50%;
+                @media screen and (max-width: 768px) {
+                    height: 5px;
+                    width: 30px;
+                }
+            }
+
+            &:before {
+                left: 22px;
+                transform: rotate(240deg);
+                animation: leftArrow .8s 1s infinite ease-out alternate;
+                border-top-left-radius: 3px;
+                @media screen and (max-width: 768px) {
+                    left: 8px;
+                }
+            }
+
+            &:after {
+                left: 28px;
+                transform: rotate(-60deg);
+                animation: rightArrow .8s 1s infinite ease-out alternate;
+                border-bottom-left-radius: 3px;
+                @media screen and (max-width: 768px) {
+                    left: 11px;
+                }
+            }
+
+            &:hover {
+                animation-play-state: paused;
+            }
+
+            span {
+                position: absolute;
+                display: block;
+                color: white;
+                @include font-rem-px(20);
+                left: 6px;
+                top: -40px;
+                @media screen and (max-width: 768px) {
+                    left: -6px;
+                    top: -15px;
+                    font-weight: 500;
+                    @include font-rem-px(16);
+                }
+            }
+        }
+    }
+}
+
+#section-about {
+    padding: 100px 0;
+    background-color: #FFFFFF;
+    //margin-top: 100vh;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+        padding: 50px 0 35px;
+    }
+
+    .txt-basic {
+        line-height: 2.2;
+    }
+}
+
+#section-news {
+    padding: 100px 0 100px;
+    background: url("../images/icons/pattern-news@2x.png") no-repeat center top 60px,
+    url("../images/photos/bg-pattern@2x.jpg") repeat top left;
+    background-size: auto 201px, auto;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+        padding: 50px 0;
+        background: url("../images/icons/pattern-news-sp.png") no-repeat center top 33px,
+        url("../images/photos/bg-pattern@2x.jpg") repeat top left;
+        background-size: auto 100px, auto;
+    }
+    @media screen and (max-width: 374px) {
+        background-size: auto 80px, auto;
+    }
+}
+
+.section-banner-lg {
+    //background: url("../images/photos/bg-pattern@2x.jpg") repeat top left;
+    position: relative;
+    z-index: 1;
+
+    .banner {
+        height: calc-vw(400, 1920);
+        //background: url("../images/photos/banner-lg@2x.jpg") no-repeat center center;
+
+        @media screen and (max-width: 768px) {
+            height: calc-vw(269, 750);
+            //background: url("../images/photos/banner-lg-sp@2x.jpg") no-repeat center center;
+
+        }
+    }
+}
+
+#section-menu {
+    padding: 120px 0 105px;
+    background: url("../images/icons/pattern-menu-01@2x.png") no-repeat center top 80px,
+    url("../images/icons/coffee-cup-pattern@2x.png") no-repeat center bottom 100px;
+    background-size: auto 143px, auto 74px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+        padding: 40px 0 60px;
+        background: url("../images/icons/pattern-menu-sp@2x.png") no-repeat center top 32px,
+        url("../images/icons/coffee-cup-pattern-sp@2x.png") no-repeat center bottom 10px;
+        background-color: #FFFFFF;
+        background-size: auto 60px, auto 57px;
+    }
+    @media screen and (max-width: 374px) {
+        background-size: auto 55px, auto 57px;
+    }
+}
+
+#section-access {
+    background: url("../images/icons/pattern-access@2x.png") no-repeat center top 60px,
+    url("../images/photos/bg-access@2x.png") repeat left top;
+    background-color: #FFFFFF;
+    background-size: auto 180px, auto;
+    padding: 120px 0 90px;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+        padding: 50px 0 40px;
+        background: url("../images/icons/pattern-access-sp@2x.png") no-repeat center top 27px,
+        url("../images/photos/bg-access@2x.png") repeat left top;
+        background-color: #FFFFFF;
+        background-size: auto 100px, auto;
+    }
+    @media screen and (max-width: 374px) {
+        background-size: auto 80px, auto;
+    }
+}
+
+#section-contact-us {
+    padding: 90px 0 60px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+        padding: 27px 0 20px;
+    }
+
+    .btn {
+        width: 570px;
+        height: 100px;
+        line-height: 100px;
+        padding: 0;
+        @media screen and (max-width: 768px) {
+            width: 320px;
+            height: 60px;
+            line-height: 60px;
+            @include font-rem-px(14);
+            &:hover {
+                @include font-rem-px(15);
+            }
+        }
+        @media screen and (max-width: 374px) {
+            width: 100%;
+            &:hover {
+                @include font-rem-px(15);
+            }
+        }
+
+    }
+
+    .link-basic {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:after {
+            display: block;
+            content: '';
+            background: url("../images/icons/ext-link-icn@2x.png") no-repeat center center;
+            background-size: 100% 100%;
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@keyframes hotpot-cover {
+    0% {
+        transform: rotate(0);
+        transform-origin: 0 40% 0;
+    }
+    50% {
+        transform: rotate(-10deg);
+        transform-origin: 0 40% 0;
+    }
+    75% {
+        transform: rotate(0);
+        transform-origin: 0 40% 0;
+    }
+    100% {
+        transform: rotate(0);
+        transform-origin: 0 40% 0;
+    }
+}
+
+@keyframes hotpot-steam {
+    0% {
+        top: 5px;
+        right: 60px;
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: .7;
+        top: 0;
+        transform: scale(1.6);
+    }
+    100% {
+        opacity: 0;
+        top: -5px;
+        transform: scale(2);
+    }
+}
+
+@keyframes hotpot-body {
+    0% {
+        transform: rotate(0);
+        transform-origin: 0 0 0;
+    }
+    50% {
+        transform: rotate(3deg);
+        transform-origin: 0 0 0;
+    }
+    75% {
+        transform: rotate(0);
+        transform-origin: 0 0 0;
+    }
+    100% {
+        transform: rotate(0);
+        transform-origin: 0 0 0;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+@keyframes leftArrow {
+    0% {
+    }
+    100% {
+        transform: rotate(210deg);
+    }
+}
+
+@keyframes rightArrow {
+    0% {
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}

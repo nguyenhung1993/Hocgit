@@ -1,0 +1,234 @@
+.company-profiles {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background: url("../images/photos/yellow-stripped-pattern.png") white no-repeat right bottom;
+    @media screen and (max-width: 768px) {
+        padding-top: calc-vw(30, 375);
+        padding-bottom: calc-vw(50, 375);
+        background-size: calc-vw(240, 375) calc-vw(260, 375);
+    }
+
+    .company-profiles-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        @media screen and (max-width: 768px) {
+            width: calc(100% + 10.66666vw);
+            position: relative;
+            left: -5.33333vw;
+        }
+
+        dl {
+            width: 42.73%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            dt, dd {
+                border-top: 1px solid #DEDEDE;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                @extend .txt-basic;
+                @media screen and (max-width: 768px) {
+                    padding-top: calc-vw(25, 375);
+                    padding-bottom: calc-vw(25, 375);
+                    font-size: calc-vw(12, 375);
+                }
+            }
+
+            dt {
+                width: 34%;
+                padding-left: 30px;
+                padding-right: 20px;
+                @media screen and (max-width: 768px) {
+                    padding-left: calc-vw(20, 375);
+                    padding-right: calc-vw(20, 375);
+                    width: 30%;
+                }
+            }
+
+            dd {
+                width: 66%;
+                padding-right: 20px;
+                @media screen and (max-width: 768px) {
+                    width: 70%;
+                    padding-right: calc-vw(20, 375);
+                }
+            }
+        }
+    }
+}
+
+.organization-chart {
+    padding: 100px 0;
+    background-color: #FAFAFA;
+    @media screen and (max-width: 768px) {
+        padding: calc-vw(30, 375) 0;
+    }
+}
+
+.company-access {
+    padding: 100px 0;
+    background: url("../images/photos/yellow-stripped-pattern-02.png") white no-repeat left top;
+    @media screen and (max-width: 768px) {
+        padding: calc-vw(80, 375) 0;
+        background-size: calc-vw(75, 375) calc-vw(80, 375);
+        .container {
+            padding: 0;
+        }
+    }
+}
+
+.relationship-awards {
+    padding-bottom: 50px;
+    background-color: #fff;
+    @media screen and (max-width: 768px) {
+        padding-bottom: calc-vw(30, 375);
+    }
+
+    table {
+        margin-bottom: 50px;
+        width: 100%;
+
+        thead {
+            th {
+                color: white;
+                background-color: #333333;
+                text-align: center;
+                padding: 9px 30px;
+                border: 1px solid white;
+                @include font-rem-px(15);
+                @media screen and (max-width: 768px) {
+                    padding: calc-vw(14, 375) calc-vw(10, 375);
+                    font-size: calc-vw(12, 375);
+                }
+            }
+        }
+
+        tbody {
+            td {
+                padding: 19px 30px;
+                background-color: #fafafa;
+                border: 1px solid white;
+                @extend .txt-basic;
+                @media screen and (max-width: 768px) {
+                    padding: calc-vw(14, 375) calc-vw(10, 375);
+                    font-size: calc-vw(12, 375);
+                }
+            }
+        }
+    }
+
+    .awards-list {
+        display: block;
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 110px;
+        @media screen and (max-width: 768px) {
+            max-width: calc-vw(295, 375);
+            margin-bottom: calc-vw(80, 375);
+        }
+
+        li {
+            width: 100%;
+            height: 1px;
+            background-color: #333333;
+            margin-bottom: 40px;
+            position: relative;
+
+            span {
+                display: inline-block;
+                background-color: #fff;
+                position: absolute;
+                @extend .txt-basic;
+                @include v-align;
+                @media screen and (max-width: 768px) {
+                    font-size: calc-vw(12, 375);
+                }
+
+                &:first-child {
+                    left: 0;
+                    padding-right: 5px;
+                    @media screen and (max-width: 768px) {
+                        padding-right: calc-vw(5, 375);
+                    }
+                }
+
+                &:last-child {
+                    right: 0;
+                    padding-left: 5px;
+                    @media screen and (max-width: 768px) {
+                        padding-left: calc-vw(5, 375);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.construction-result {
+    background: url("../images/photos/yellow-trapezoid-pattern.png") no-repeat white right bottom;
+    padding-bottom: 90px;
+    @media screen and (max-width: 768px) {
+        padding-bottom: calc-vw(80, 375);
+        background-size: calc-vw(300, 375) calc-vw(200, 375);
+        .container {
+            padding: 0;
+        }
+    }
+    .construction-result-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .col {
+            width: 42.73%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: calc-vw(25, 375);
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            ul {
+                margin-bottom: 40px;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: calc-vw(25, 375);
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                li {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    @extend .txt-basic;
+                    @media screen and (max-width: 768px) {
+                        padding-left: calc-vw(20, 375);
+                        padding-right: calc-vw(20, 375);
+                        font-size: calc-vw(12, 375);
+                    }
+
+                    &:first-child {
+                        border-bottom: 1px solid #DEDEDE;
+                        padding-bottom: 15px;
+                        margin-bottom: 15px;
+                        font-weight: 500;
+                        @media screen and (max-width: 768px) {
+                            margin-bottom: calc-vw(10, 375);
+                            padding-bottom: calc-vw(10, 375);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

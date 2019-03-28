@@ -1,0 +1,14 @@
+ホームページよりお問い合わせをいただきました。
+下記内容を確認の上、ご対応をお願いします。
+
+-----
+■お問い合わせ内容：<?php echo($fContentOfInquiry); ?>
+■希望職種：<?php echo($fOccupation); ?>
+
+■お名前：<?php echo($fFirstName); ?>
+■お電話番号（携帯可）：<?php echo($fPhoneNumber); ?>
+■メールアドレス：<?php echo($fEmail); ?>
+
+■当社へのメッセージ：
+<?php echo($fComment); ?>
+-----

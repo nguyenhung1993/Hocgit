@@ -1,0 +1,1 @@
+<?php define('FORM_ALIAS', 'contact'); require_once dirname(__FILE__) . '/_form_scripts/confirm.php'; ?>

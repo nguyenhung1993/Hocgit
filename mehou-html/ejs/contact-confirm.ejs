@@ -1,0 +1,87 @@
+<main class="main-content page-<%= pageData.template %>">
+    <section class="page-head-banner txt-center page-<%= pageData.template %>">
+        <div class="container container-md">
+            <h2>お問い合わせ</h2>
+            <p>CONTACT</p>
+            <img src="<%= RELATIVE_PATH %>images/icons/section-contact-ttl-pattern@2x.png" alt="">
+        </div>
+    </section>
+    <section class="section-contact-form">
+        <form action="" method="post">
+            <div class="contact-form-heading">
+                <div class="container container-xs">
+                    <p class="notice">この内容でよろしいですか？</p>
+                </div>
+            </div>
+            <div class="contact-form-body">
+                <div class="container container-sm">
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fContentOfInquiry">お問い合わせ内容</label>
+                        </div>
+                        <div class="form-content">
+                            <p>その他のお問い合わせ</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fOccupation">希望職種</label>
+                        </div>
+                        <div class="form-content">
+                            <p>未経験歓迎の電気工事士</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fFirstName">お名前</label>
+                        </div>
+                        <div class="form-content">
+                            <p>名宝太郎</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fPhoneNumber">お電話番号（携帯可）</label>
+                        </div>
+                        <div class="form-content">
+                            <p>09012345678</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fEmail">メールアドレス</label>
+                        </div>
+                        <div class="form-content">
+                            <p>example@meihou.nagoya</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="fComment">当社へのメッセージ</label>
+                            <span class="notice">※自由にご記入ください！</span>
+                        </div>
+                        <div class="form-content">
+                            <p>
+                                自由にご記入ください自由にご記入ください自由にご記入ください自由にご記入ください自由にご記入ください自由にご記入ください自由にご記入ください自由にご記入ください自由にご記入ください自由にご記入ください自由にご記入ください
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-footer page-<%= pageData.template %>">
+                <div class="container container-sm txt-center">
+                    <button type="submit" class="btn btn-solid-orange">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        <span>送信する</span>
+                        <span class="arrow-right"></span>
+                    </button>
+                    <a href="<%= RELATIVE_PATH %>contact/index.html" class="btn btn-solid-yellow scroll-left">
+                        <span class="arrow-left"></span>
+                        <span>入力画面に戻る</span>
+                        <i class="fa fa-paper-plane fa-hidden" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>

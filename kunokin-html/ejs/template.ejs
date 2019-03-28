@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title><%= pageData.title %></title>
+    <meta name="description" content="<%= pageData.description %>">
+    <meta name="keyword" content="<%= pageData.keyword %>">
+    <link rel="shortcut icon" href="<%= RELATIVE_PATH %>favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<%= RELATIVE_PATH %>favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="<%= RELATIVE_PATH %>js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="<%= RELATIVE_PATH %>js/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="<%= RELATIVE_PATH %>css/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="<%= RELATIVE_PATH %>css/styles.css">
+</head>
+<body>
+
+<% include common/_header.ejs %>
+<%- include(pageData.template) %>
+<% include common/_footer.ejs %>
+
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/jquery.matchHeight.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/slick/slick.min.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="<%= RELATIVE_PATH %>js/setting.js"></script>
+</body>
+</html>

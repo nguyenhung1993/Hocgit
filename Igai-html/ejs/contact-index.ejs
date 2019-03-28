@@ -1,0 +1,87 @@
+<main class="contents page-<%= pageData.template %>">
+    <% include common/_breadcrumbs.ejs %>
+    <section class="page-heading page-heading-contact page-heading-<%= pageData.template %>">
+        <h1 class="title"><%= pageData.h1 %></h1>
+        <p class="txt">Contact</p>
+    </section>
+    <section class="section-contact-from">
+        <div class="container">
+            <div class="row mbpc-50">
+                <p class="col-12 txt-basic lh2 txt-center">
+                    伊賀井商店に関するお問い合わせは、下記のフォームより承っております。<br>
+                    必要事項を入力の上、確認ボタンを押してください。
+                </p>
+            </div>
+            <form action="" class="contact-from">
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fName">お名前</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fName" tabindex="1" accesskey="a" required="" value="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fTitle">役職名</label>
+                        <span class="label-option">任意</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fTitle" tabindex="1" accesskey="a" required=""  value="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fCompanyName">会社名</label>
+                        <span class="label-option">任意</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fCompanyName" tabindex="1" accesskey="a" required=""  value="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fPhone">電話番号</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="number" id="fPhone" tabindex="1" accesskey="a" required="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fMail">メールアドレス</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="email" id="fMail" tabindex="1" accesskey="a" required="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">
+                        <label for="fUrl">ホームページURL</label>
+                        <span class="label-option">任意</span>
+                    </div>
+                    <div class="form-content">
+                        <input type="text" id="fUrl" tabindex="1" accesskey="a" required=""  value="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label top">
+                        <label for="fComment">お問い合わせ内容</label>
+                        <span class="label-required">必須</span>
+                    </div>
+                    <div class="form-content">
+                        <textarea id="fComment" tabindex="1" accesskey="a"  name="story"></textarea>
+                    </div>
+                </div>
+                <div class="txt-center mtpc-50 ">
+                    <button type="submit" class="btn btn-center btn-mail" tabindex="1" accesskey="a"><span>この内容で送信する <i class="fa fa-envelope" aria-hidden="true"></i></span></button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <% include common/_footer.ejs %>
+</main>

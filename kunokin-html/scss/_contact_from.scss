@@ -1,0 +1,292 @@
+.contact-wrap {
+  margin-bottom: 90px;
+}
+
+.info-section {
+  margin-bottom: 60px;
+  .desc {
+    font-weight: bold;
+    @include font-rem-px(16);
+    margin-bottom: 15px;
+  }
+  .sub-desc {
+    @include font-rem-px(14);
+    color: #666;
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+}
+
+.tel-section {
+  margin-bottom: 30px;
+}
+
+.label {
+  width: 60px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  @include font-rem-px(14);
+}
+
+.label-required {
+  color: #fff;
+  background: #EE1C3D;
+}
+
+.label-any {
+  color: #fff;
+  background: #999;
+}
+
+.error {
+  color: #EE1C3D;
+}
+
+.contact-form {
+  width: 820px;
+  margin: 0 auto;
+  table {
+    width: 100%;
+  }
+  th {
+    width: 1em;
+    white-space: nowrap;
+    font-weight: normal;
+    text-align: left;
+    padding: 15px 0;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+    @include font-rem-px(14);
+  }
+  td {
+    padding: 15px 0;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+    @include font-rem-px(16);
+    &.td-label {
+      width: 60px;
+      padding: 15px 30px;
+    }
+    &.confirm-td {
+      padding-top: 30px;
+    }
+  }
+  ul {
+    margin: -10px 0;
+  }
+  li {
+    margin: 10px 0;
+  }
+  .half {
+    width: 40%;
+    float: left;
+    margin: -5px 0;
+    li {
+      margin: 5px 0;
+    }
+  }
+  .line {
+    margin: 0;
+    padding: 15px 0;
+    li {
+      display: inline-block;
+      margin: 0;
+      margin-right: 15px;
+    }
+  }
+  .privacy-box {
+    margin-top: 20px;
+    height: 160px;
+    overflow: auto;
+    background: #EFF5F8;
+    padding: 30px;
+    h2 {
+      margin-bottom: 20px;
+      color: #004AB0;
+      font-weight: 700;
+      @include font-rem-px(16);
+    }
+    p {
+      @include font-rem-px(14);
+    }
+    dt {
+      font-weight: bold;
+      margin-top: 2em;
+      @include font-rem-px(14);
+    }
+    dd {
+      padding-left: 1.5em;
+      margin-top: .5em;
+      margin-bottom: 1em;
+      @include font-rem-px(14);
+    }
+  }
+  .submit {
+    margin-top: 40px;
+    text-align: center;
+    @include font-rem-px(0);
+    li {
+      @include font-rem-px(16);
+      display: inline-block;
+      margin: 0 20px;
+      vertical-align: top;
+    }
+    input {
+      outline: none;
+    }
+  }
+}
+
+input.text, textarea.text {
+  border: 1px solid #ccc;
+  @include font-rem-px(16);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+}
+
+input.text:focus, textarea.text:focus {
+  border: 1px solid #004AB0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  &.text {
+    padding: 0 10px;
+    line-height: 50px;
+    height: 50px;
+  }
+  &.text-auto {
+    width: auto;
+  }
+  &.number {
+    width: 75px;
+  }
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+textarea.text {
+  padding: 10px;
+  height: 200px;
+}
+
+.contact-form select {
+  @include font-rem-px(16);
+  border: 1px solid #ccc;
+  background: none;
+}
+
+button.button {
+  vertical-align: middle;
+  cursor: pointer;
+  background: none;
+  border: 2px solid #004AB0;
+  @include font-rem-px(14);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  line-height: 36px;
+  color: #004AB0;
+  &:hover {
+    color: #fff;
+    background: #004AB0;
+  }
+}
+
+label {
+  cursor: pointer;
+  input {
+    margin-right: 5px;
+  }
+}
+
+.sp-on, .contact-form th span {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .contact-wrap {
+    margin-bottom: 30px;
+  }
+  .sp-on {
+    display: block;
+  }
+  .sp-off, #headline .topicPath {
+    display: none;
+  }
+  .contact-form {
+    width: 100%;
+    th {
+      width: 100%;
+      display: block;
+      border-bottom: none;
+      padding: 10px 0 0;
+      span {
+        display: inline-block;
+      }
+    }
+    td {
+      width: 100%;
+      display: block;
+      padding: 10px 0;
+      &.td-label {
+        display: none;
+      }
+    }
+    .line {
+      padding: 10px 0;
+    }
+  }
+  input.text {
+    height: 50px;
+    line-height: 50px;
+  }
+  .label {
+    width: 50px;
+    line-height: 30px;
+    margin-left: 10px;
+
+  }
+  textarea.text {
+    height: 100px;
+  }
+  .contact-form {
+    .privacy-box {
+      padding: 10px 5px;
+      height: 80px;
+      dd {
+        padding-left: 0;
+      }
+    }
+    .submit li {
+      margin: 10px;
+    }
+  }
+  button.button {
+    height: 30px;
+    line-height: 0;
+  }
+  .info-section .sub-desc2 {
+    padding-left: 0;
+  }
+}
+.error-message {
+  color: #EE1C3D;
+  p {
+    @include font-rem-px(16);
+    color: #EE1C3D;
+  }
+}

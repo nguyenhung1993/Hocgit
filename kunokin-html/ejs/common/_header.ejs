@@ -1,0 +1,74 @@
+<header id="main-header">
+    <div class="top-header">
+        <div class="container">
+            <div class="left-panel">
+                <div class="logo">
+                    <p>久野金属工業は、複雑・高精度プレス加工の製品開発から量産まで一貫対応する、愛知県の金属加工メーカーです。</p>
+                    <a href="<%= RELATIVE_PATH %>recruit/">
+                        <img src="http://www.kunokin.com/common/img/head/head-logo.png" alt="logo" width="240">
+                    </a>
+                    <a href="<%= RELATIVE_PATH %>recruit/">採用サイト</a>
+                </div>
+                <a href="tel:0569438801" class="phone-contact">
+                    <img src="<%= RELATIVE_PATH %>images/icons/phone-call-img.png" alt="0569-43-8801" height="100" width="250">
+                </a>
+            </div>
+            <a href="" id="menu-sp-btn">
+                <span></span><span></span><span></span>
+            </a>
+            <div class="right-panel">
+                <a href="<%= RELATIVE_PATH %>recruit/company_entry/" class="company-brief-link">
+                    <img src="<%= RELATIVE_PATH %>images/icons/manu-icon-01@2x.png" alt="" height="38">
+                    <span>会社説明会申し込み</span>
+                </a>
+                <a href="<%= RELATIVE_PATH %>entry" class="entry-link">
+                    <img src="<%= RELATIVE_PATH %>images/icons/manu-icon-02@2x.png" alt="" height="38">
+                    <span>エントリー</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="bottom-header" role="navigation">
+        <div class="bg-header"></div>
+        <div class="container">
+            <ul>
+                <li class="sp">
+                    <a href="<%= RELATIVE_PATH %>recruit/"<% if (pageData.template === "recruit-index"){ %> class="active"<% } %>>ホーム</a>
+                </li>
+                <li>
+                    <a href="<%= RELATIVE_PATH %>recruit/vision/"<% if (pageData.template === "recruit-vision"){ %> class="active"<% } %>>ビジョン</a>
+                </li>
+                <li>
+                    <a class="smooth-anchor smooth-anchor-note" data-archor="eyebrow" href="<%= RELATIVE_PATH %>recruit/index.html#eyebrow" <% if (pageData.template === "recruit-guideline-job"){ %> class="active"<% } %>>募集要項</a>
+                </li>
+                <li>
+                    <a href="<%= RELATIVE_PATH %>recruit/number.html">数字で見る</a>
+                </li>
+                <li>
+                    <a href="<%= RELATIVE_PATH %>recruit/gallery/" <% if (pageData.template === "recruit-gallery-index" || pageData.template === "recruit-gallery-detail"){ %> class="active" <% } %>>ギャラリー</a>
+                </li>
+                <li>
+                    <a href="<%= RELATIVE_PATH %>recruit/senior.html">先輩社員紹介</a>
+                </li>
+                <li>
+                    <a href="<%= RELATIVE_PATH %>recruit/active_staff/">
+                        実業団で<br>
+                        活躍する社員
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= RELATIVE_PATH %>recruit/carrier_step/">キャリアステップ</a>
+                </li>
+                <li>
+                    <a href="<%= RELATIVE_PATH %>recruit/companyinfo/" <% if (pageData.template === "recruit-companyinfo-index" || pageData.template === "recruit-companyinfo-detail" || pageData.template === "recruit-company_entry" || pageData.template === "recruit-company_entry-error"){ %> class="active"<% } %>>会社説明会</a>
+                </li>
+                <li class="sp">
+                    <a href="<%= RELATIVE_PATH %>/recruit/company_entry/">会社説明会エントリー</a>
+                </li>
+                <li class="sp">
+                    <a href="<%= RELATIVE_PATH %>entry/">エントリ </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,25 @@
+<main class="contents page-<%= pageData.template %>">
+    <% include common/_breadcrumbs.ejs %>
+    <section class="page-heading page-heading-contact page-heading-<%= pageData.template %>">
+        <h1 class="title"><%= pageData.h1 %></h1>
+        <p class="txt">Contact</p>
+    </section>
+    <section class="section-contact-from">
+        <div class="container">
+            <div class=" mbpc-30 contact-from-head contact-from-head-result ">
+                <h2 class="title txt-center mbpc-30">
+                    お問い合わせを受け付けました
+                </h2>
+                <p class="txt-basic lh2 lh2 ">
+                    お問い合わせいただきありがとうございます。<br>
+                    ご記入いただいた内容は無事送信されました。<br>
+                    自動返信メールを送信しておりますので、ご確認くださいませ。
+                </p>
+            </div>
+            <div class="txt-center mtpc-50 ">
+                <button type="submit" class="btn btn-center btn-mail" tabindex="1" accesskey="a">トップページへ戻る<img alt="img" src="<%= RELATIVE_PATH %>images/photos/contact/home.png"/></button>
+            </div>
+        </div>
+    </section>
+    <% include common/_footer.ejs %>
+</main>

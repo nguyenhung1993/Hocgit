@@ -1,0 +1,33 @@
+.privacy-policy-article {
+    padding: 100px 0;
+    background: url("../images/photos/gray-stripped-pattern.png") #fff no-repeat center top 200px;
+    background-size: 100% auto;
+    @media screen and (max-width: 768px) {
+        background: url("../images/photos/gray-stripped-pattern-sp@2x.png") #fff no-repeat center top calc-vw(345, 375);
+        background-size: 100% auto;
+        padding: calc-vw(30, 375) 0 calc-vw(100, 375);
+    }
+    h3 {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        color: #333333;
+        @include font-rem-px(40);
+        font-weight: bold;
+        @media screen and (max-width: 768px) {
+            font-size: calc-vw(20, 375);
+            margin-top: calc-vw(60, 375);
+            margin-bottom: calc-vw(20, 375);
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    ul, p {
+        color: #333333;
+        line-height: 1.8;
+        @include font-rem-px(15);
+        @media screen and (max-width: 768px) {
+            font-size: calc-vw(12, 375);
+        }
+    }
+}

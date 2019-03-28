@@ -1,0 +1,172 @@
+/* ====================================================
+Font
+==================================================== */
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../fonts/CaviarDream/CaviarDreams-Bold.eot');
+    src: url('../fonts/CaviarDream/CaviarDreams-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CaviarDream/CaviarDreams-Bold.woff2') format('woff2'),
+    url('../fonts/CaviarDream/CaviarDreams-Bold.woff') format('woff'),
+    url('../fonts/CaviarDream/CaviarDreams-Bold.ttf') format('truetype'),
+    url('../fonts/CaviarDream/CaviarDreams-Bold.svg#CaviarDreams-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bell Gothic Std';
+    src: url('../fonts/BellGothicStd/BellGothicStd-Bold.eot');
+    src: url('../fonts/BellGothicStd/BellGothicStd-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BellGothicStd/BellGothicStd-Bold.woff2') format('woff2'),
+    url('../fonts/BellGothicStd/BellGothicStd-Bold.woff') format('woff'),
+    url('../fonts/BellGothicStd/BellGothicStd-Bold.ttf') format('truetype'),
+    url('../fonts/BellGothicStd/BellGothicStd-Bold.svg#BellGothicStd-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bell Gothic Std';
+    src: url('../fonts/BellGothicStd/BellGothicStd-Black.eot');
+    src: url('../fonts/BellGothicStd/BellGothicStd-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BellGothicStd/BellGothicStd-Black.woff2') format('woff2'),
+    url('../fonts/BellGothicStd/BellGothicStd-Black.woff') format('woff'),
+    url('../fonts/BellGothicStd/BellGothicStd-Black.ttf') format('truetype'),
+    url('../fonts/BellGothicStd/BellGothicStd-Black.svg#BellGothicStd-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+$font-gothic: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', '游ゴシック', '游ゴシック体', YuGothicMedium, YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ ゴシック', 'MS Gothic', 'HiraKakuProN-W3', 'TakaoExゴシック', TakaoExGothic, 'MotoyaLCedar', 'Droid Sans Japanese', sans-serif;
+$font-mincho: 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', '游明朝', '游明朝体', YuMincho, 'Yu Mincho', 'ＭＳ 明朝', 'MS Mincho', 'HiraMinProN-W3', 'TakaoEx明朝', TakaoExMincho, 'MotoyaLCedar', 'Droid Sans Japanese', serif;
+
+@mixin font-rem-px($sizeValue) {
+    font-size: ($sizeValue) + px;
+    font-size: ($sizeValue / 10) + rem;
+}
+
+@mixin font-rem-vw($element-size, $screen-size) {
+    font-size: ($element-size / $screen-size) + vw;
+}
+
+/* ====================================================
+Position & transform
+==================================================== */
+@mixin v-align {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin h-align {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@mixin v-h-align {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* ====================================================
+Color
+==================================================== */
+
+/* ====================================================
+Sizing
+==================================================== */
+@for $i from 1 through 100 {
+    @media screen and (min-width: 769px) {
+        .mtpc-#{$i} {
+            margin-top: $i + px !important;
+        }
+        .mlpc-#{$i} {
+            margin-left: $i + px !important;
+        }
+        .mrpc-#{$i} {
+            margin-right: $i + px !important;
+        }
+        .mbpc-#{$i} {
+            margin-bottom: $i + px !important;
+        }
+        .ptpc-#{$i} {
+            padding-top: $i + px !important;
+        }
+        .plpc-#{$i} {
+            padding-left: $i + px !important;
+        }
+        .prpc-#{$i} {
+            padding-right: $i + px !important;
+        }
+        .pbpc-#{$i} {
+            padding-bottom: $i + px !important;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .mtsp-#{$i} {
+            margin-top: $i + px !important;
+        }
+        .mlsp-#{$i} {
+            margin-left: $i + px !important;
+        }
+        .mrsp-#{$i} {
+            margin-right: $i + px !important;
+        }
+        .mbsp-#{$i} {
+            margin-bottom: $i + px !important;
+        }
+        .ptsp-#{$i} {
+            padding-top: $i + px !important;
+        }
+        .plsp-#{$i} {
+            padding-left: $i + px !important;
+        }
+        .prsp-#{$i} {
+            padding-right: $i + px !important;
+        }
+        .pbsp-#{$i} {
+            padding-bottom: $i + px !important;
+        }
+    }
+}
+
+@function calc-vw($element-size, $screen-size) {
+    $vwSize: ($element-size / $screen-size) * 100;
+    @return #{$vwSize}vw;
+}
+
+/* ====================================================
+Misc
+==================================================== */
+@mixin no-select {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@mixin smooth-transition {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}

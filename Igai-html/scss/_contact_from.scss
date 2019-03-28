@@ -1,0 +1,119 @@
+.page-heading {
+	&.page-heading-contact {
+		background:url("../images/icons/banner-contact.jpg")no-repeat center center /100%;
+		background-size: 100% 100%;
+	}
+}
+.contact-from-head {
+	.title {
+		font-weight: 700;
+		color: #BC2B2B;
+		@include font-rem-px(30)
+	}
+	.txt-basic {
+		font-weight: 500;
+		color: #BC2B2B;
+		@include font-rem-px(20)
+	}
+	&.contact-from-head-result {
+		.title {
+			color: #000;
+		}
+		.txt-basic {
+			color: #000;
+		}
+	}
+}
+.contact-from {
+	.form-row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+
+		.form-label {
+			width: 300px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 0;
+			padding-right: 30px;
+			&.top {
+				align-items: flex-start;
+			}
+			label {
+				color: #000000;
+				font-weight: 700;
+				@include font-rem-px(20);
+			}
+
+			.label-required {
+				width: 70px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				background-color: #BC2B2B;
+				color: #fff;
+				font-weight: 700;
+				@include font-rem-px(15);
+			}
+			.label-option {
+				width: 70px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				background-color: #00ADEC;
+				color: #fff;
+				font-weight: 700;
+				@include font-rem-px(15);
+			}
+		}
+
+		.form-content {
+			width: calc(100% - 300px);
+			@include font-rem-px(14);
+			line-height: 1.6;
+			input, textarea {
+				display: block;
+				width: 100%;
+				appearance: none;
+				border: 1px solid #DDDDDD;
+				border-radius: 5px;
+				height: 50px;
+				padding: 0 20px;
+				@include font-rem-px(14);
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			textarea {
+				resize: vertical;
+				min-height: 100px;
+				padding-top: 10px;
+			}
+
+
+		}
+
+		.error-label {
+			color: #fc0000;
+			@include font-rem-px(14);
+			line-height: 1.8;
+		}
+	}
+	button {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.btn-mail {
+		span {
+			width: 100%;
+		}
+		.fa {
+			margin-left: 10px;
+		}
+	}
+}

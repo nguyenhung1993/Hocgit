@@ -1,0 +1,14 @@
+{
+  "name": "meihou",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp-autoprefixer": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-sass": "latest",
+    "gulp-ejs": "latest",
+    "gulp-rename": "latest",
+    "gulp-plumber": "latest",
+    "gulp": "latest"
+  }
+}
